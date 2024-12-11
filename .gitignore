@@ -1,0 +1,10 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore CSV files with sensitive info contacts.csv
+
+# Ignore credentials .pdf  # If you don't want to include the resume file in your repo

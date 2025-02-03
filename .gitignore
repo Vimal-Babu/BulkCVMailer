@@ -4,7 +4,18 @@ venv/
 # Ignore Python cache files
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Ignore CSV files with sensitive info contacts.csv
+# Ignore environment variables and credentials
+.env
 
-# Ignore credentials .pdf  # If you don't want to include the resume file in your repo
+# Ignore CSV files with sensitive info
+contacts.csv
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+
+# Ignore resume file if you don’t want to include it in the repo
+VimalPython Resume.pdf

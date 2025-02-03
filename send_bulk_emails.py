@@ -1,20 +1,19 @@
 import smtplib
 import pandas as pd
+import os
+from dotenv import load_dotenv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
-# Load your contact list from CSV
+load_dotenv()
+
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+
 contacts = pd.read_csv('contacts.csv', header=None, names=['Email'])
 
-#contacts = pd.read_csv('contacts.csv', names=['Email'])
-#print(contacts, "Email is Going to Sent to This Mail Id ")
 
-# Your email credentials
-EMAIL_ADDRESS = "vimalbabu3609@gmail.com"
-EMAIL_PASSWORD = "mibhmbdcbipglczo"
-
-# Email setup
 subject = "Application for Python Django Developer"
 body_template = """
 
@@ -38,7 +37,7 @@ Thank you for your time and for reviewing my profile.
 
 Sincerely,
 Vimal Babu
-+91 9567250335
+📞 +91 9567250335
 GitHub: https://github.com/Vimal-Babu
 LinkedIn: https://www.linkedin.com/in/vimalbabu369/
 Portfolio: https://vimal-babu.github.io/Personal/#

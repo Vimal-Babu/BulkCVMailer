@@ -49,7 +49,7 @@ with smtplib.SMTP('smtp.gmail.com', 587) as server:
     server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
     for _, row in contacts.iterrows():
-        email_address = row['Email']  # Fetch email from the row
+        email_address = row['Email'].strip().rstrip('.')  # Fetch email from the row
         print(f"Sending email to: {email_address}")  # Debugging line
         
         # Set up email message
@@ -61,13 +61,19 @@ with smtplib.SMTP('smtp.gmail.com', 587) as server:
         # Attach the text and PDF files
         msg.attach(MIMEText(body_template, 'plain'))
 
+        try:
         # Attach resume
-        with open("VimalPython Resume.pdf", "rb") as f:
-            resume = MIMEApplication(f.read(), _subtype="pdf")
-            resume.add_header('Content-Disposition', 'attachment', filename="resume.pdf")
-            msg.attach(resume)
+            with open("VimalPython Resume.pdf", "rb") as f:
+                resume = MIMEApplication(f.read(), _subtype="pdf")
+                resume.add_header('Content-Disposition', 'attachment', filename="resume.pdf")
+                msg.attach(resume)
 
-        # Send the email
-        server.send_message(msg)
-        print(f"Succes!!!... Email sent to {email_address}")
-
+            # Send the email
+            server.send_message(msg)
+            print(f"✅ Succes!!! Email sent to {email_address}")
+            
+        except smtplib.SMTPRecipientsRefused as e :
+            print(f"❌ Error: Invalid recipient email '{email_address}'. Skipping. Details: {e}")
+        
+        except Exception as e:
+            print(f"⚠️ Something went wrong while sending to {email_address}: {e}")

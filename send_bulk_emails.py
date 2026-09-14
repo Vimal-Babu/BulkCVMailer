@@ -16,7 +16,7 @@ load_dotenv()
 EMAIL_ADDRESS  = os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")  # Use Gmail App Password (not account password)
 
-RESUME_FILE    = "Vimal_Babu_Python_Django_Developer.pdf"
+RESUME_FILE    = "Vimal_Babu_Python_Django_Backend_Developer_Resume.pdf"
 CONTACTS_FILE  = "contacts.csv"
 LOG_FILE       = "send_log.json"
 DELAY_SECONDS  = 5   # Wait between sends to avoid Gmail spam flags
@@ -33,7 +33,7 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 # ── Email content ─────────────────────────────────────────
-SUBJECT = "Application for Python / Django Backend Developer Role"
+SUBJECT = ""
 
 PLAIN_TEXT = """\
 Hello,
@@ -262,7 +262,7 @@ def build_message(to_address: str) -> MIMEMultipart:
 def attach_resume(msg: MIMEMultipart):
     with open(RESUME_FILE, "rb") as f:
         part = MIMEApplication(f.read(), _subtype="pdf")
-        part.add_header("Content-Disposition", "attachment", filename="Vimal_Babu_Python_Django_Developer.pdf")
+        part.add_header("Content-Disposition", "attachment", filename="Vimal_Babu_Python_Django_Backend_Developer_Resume.pdf")
     msg.attach(part)
 
 # ── Main ──────────────────────────────────────────────────

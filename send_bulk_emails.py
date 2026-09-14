@@ -145,6 +145,7 @@ li{
 </style>
 </head>
 
+```html
 <body>
 
 <div class="wrap">
@@ -162,55 +163,77 @@ Please find my resume attached for your review.
 <h2>About me</h2>
 
 <p>
-I am currently working as a
-<strong>Junior Python / Django Backend Developer (Intern)</strong>
-at <strong>Zecser Business LLP</strong>, contributing to the development and maintenance of
-live production Django applications using
+I recently completed a <strong>3-month Python / Django Backend Developer
+internship</strong> at <strong>Zecser Business LLP</strong>, where I contributed
+to the development and maintenance of live production Django applications using
 <span class="badge">Python</span>
 <span class="badge">Django</span>
 <span class="badge">Django REST Framework</span>
 <span class="badge">PostgreSQL</span>
+<span class="badge">Redis</span>
+<span class="badge">Celery</span>
 <span class="badge">Git</span>
-<span class="badge">REST APIs</span>.
-
-My responsibilities include developing backend features, fixing production bugs,
-maintaining existing systems, and collaborating with the development team.
-Alongside my professional experience, I have built several end-to-end backend
-projects that demonstrate scalable API design and clean backend architecture.
+<span class="badge">AWS</span>.
 </p>
 
-<h2>Current Work &amp; Recent Projects</h2>
+<p>
+During the internship, I contributed <strong>41 Git commits</strong> to the
+<strong>ZecPath AI Platform</strong> and worked on backend features including
+job SEO APIs, job notifications, ID verification workflows, dashboard APIs,
+account lifecycle management, and production bug fixes. I also gained
+hands-on experience working with production code, AWS EC2, Redis,
+Celery, and PostgreSQL.
+</p>
+
+<p>
+Alongside my professional experience, I have built several end-to-end backend
+applications using Django and Flask, giving me practical experience in
+REST API development, authentication, database design, and backend
+application development.
+</p>
+
+<h2>Recent Experience &amp; Projects</h2>
 
 <ul>
 
 <li>
-<span class="proj">ZecPath</span> —
-Contributing to a production Django platform by developing backend features,
-implementing business logic, fixing bugs, and integrating database functionality.
+<span class="proj">ZecPath AI Platform</span> —
+Production recruitment SaaS where I built and maintained backend features
+including public job SEO and XML sitemap APIs, job-post notifications using
+Celery + Redis, ID proof upload and verification workflows, employer/admin
+dashboard APIs, and candidate/employer account lifecycle features.
 </li>
 
 <li>
 <span class="proj">WinnersClubX</span> —
-Maintaining a live MLM platform through bug fixes,
-feature enhancements, and day-to-day backend maintenance.
+Production MLM platform where I worked on backend maintenance,
+bug fixes, code cleanup, and AWS deployment alignment.
 </li>
 
 <li>
 <span class="proj">FieldOps Backend</span> —
-Production-grade Django REST Framework backend featuring JWT authentication,
-three-role RBAC, service request workflow, analytics APIs, and PostgreSQL.
+Django REST Framework backend featuring JWT authentication,
+three-role RBAC, service request lifecycle, dashboard analytics,
+and PostgreSQL.
 </li>
 
 <li>
 <span class="proj">AutoSpeech2Text</span> —
-Flask + React application integrating OpenAI Whisper for speech-to-text
-processing with production deployment.
+Flask + React application integrating OpenAI Whisper for
+speech-to-text processing, deployed on Render and Netlify.
 </li>
 
 </ul>
 
 <p>
-My GitHub showcases additional backend projects including
+I also have experience with <strong>REST API development, JWT authentication,
+Google OAuth 2.0, Redis caching, Celery, AWS EC2, Linux, Git/GitHub,
+and Postman</strong>.
+</p>
+
+<p>
+My GitHub also showcases additional backend projects including
+<strong>BulkCVMailer</strong>,
 <strong>Barcode Scanner</strong>,
 <strong>Django Google Connect</strong>,
 <strong>GreatEKart</strong>, and other Django applications with
@@ -218,8 +241,15 @@ documentation and live demos where applicable.
 </p>
 
 <p>
-I would welcome the opportunity to discuss how I can contribute to your engineering team.
-Thank you for your time and consideration.
+I am currently looking for a
+<strong>full-time Python / Django backend development opportunity</strong>
+where I can contribute to a development team and continue growing
+as a backend engineer.
+</p>
+
+<p>
+I would welcome the opportunity to discuss how I can contribute to your
+engineering team. Thank you for your time and consideration.
 </p>
 
 <p>
@@ -233,12 +263,14 @@ Best regards,<br>
 &nbsp;|&nbsp;
 <a href="https://www.linkedin.com/in/vimalpython3609">LinkedIn</a>
 &nbsp;|&nbsp;
-<a href="https://vimal-babu.github.io/portfolio">Portfolio</a>
+<a href="https://vimal-babu.github.io/portfolio/">Portfolio</a>
 </div>
 
 </div>
 
 </body>
+```
+
 </html>
 """
 

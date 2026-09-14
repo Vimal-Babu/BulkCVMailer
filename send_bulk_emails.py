@@ -33,7 +33,7 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 # ── Email content ─────────────────────────────────────────
-SUBJECT = ""
+SUBJECT = "Application for Python / Django Backend Developer Role"
 
 PLAIN_TEXT = """\
 Hello,
@@ -43,15 +43,23 @@ I hope you are doing well.
 I am writing to express my interest in a Python / Django Backend Developer role at your organisation. Please find my resume attached for your review.
 
 About me:
-I am currently working as a Junior Python / Django Backend Developer (Intern) at Zecser Business LLP, where I contribute to developing and maintaining live production Django applications. I work with Python, Django, Django REST Framework, PostgreSQL, Git, and Postman to build backend features, fix production issues, and collaborate with the development team. Alongside my professional experience, I have built multiple end-to-end backend applications that demonstrate scalable API design and clean backend architecture.
+I recently completed a 3-month Python Django Backend Developer internship at Zecser Business LLP, where I contributed to the development and maintenance of live production Django applications using Python, Django, Django REST Framework, PostgreSQL, Redis, Celery, Git, and AWS.
 
-Current work & recent projects:
-• ZecPath             – Contributing to a production Django platform by developing backend features, implementing business logic, fixing bugs, and integrating database functionality.
-• WinnersClubX        – Maintaining a live MLM platform through bug fixes, feature enhancements, and day-to-day backend maintenance.
-• FieldOps Backend    – Production-grade Django REST Framework backend featuring JWT authentication, three-role RBAC, service request workflow, analytics APIs, and PostgreSQL.
-• AutoSpeech2Text     – Flask + React application integrating OpenAI Whisper for speech-to-text processing with production deployment.
+During the internship, I contributed 41 Git commits to the ZecPath AI Platform and worked on backend features including job SEO APIs, notifications, ID verification workflows, dashboard APIs, account lifecycle management, and production bug fixes. I also gained hands-on experience working with production code, AWS EC2, Redis, Celery, and PostgreSQL.
 
-My GitHub showcases additional backend projects, including Barcode Scanner, Django Google Connect, GreatEKart, and other Django applications with documentation and live demos where applicable.
+Alongside my professional experience, I have built several end-to-end backend applications using Django and Flask, giving me practical experience in REST API development, authentication, database design, and backend application development.
+
+Current Work & Recent Projects:
+• ZecPath             – Built and maintained backend features including public job SEO and XML sitemap APIs, job-post notifications using Celery + Redis, ID proof upload and verification workflows, employer/admin dashboard APIs, and candidate/employer account lifecycle features.
+• WinnersClubX        – Maintaining a live production MLM platform through backend bug fixes, code cleanup, maintenance, and AWS deployment alignment.
+• FieldOps Backend    – Django REST Framework backend with JWT authentication, three-role RBAC, service request lifecycle, dashboard analytics, and PostgreSQL.
+• AutoSpeech2Text     – Flask + React application integrating OpenAI Whisper for speech-to-text processing, deployed using Render and Netlify.
+
+My GitHub showcases additional backend projects, including BulkCVMailer, Barcode Scanner, Django Google Connect, GreatEKart, and other Django applications with documentation and live demos where applicable.
+
+I also have experience with REST API development, JWT authentication, Google OAuth 2.0, Redis caching, Celery, AWS EC2, Linux, Git/GitHub, and Postman.
+
+I am currently looking for a full-time Python/Django backend development opportunity where I can contribute to a development team and continue growing as a backend engineer.
 
 I would welcome the opportunity to discuss how I can contribute to your engineering team.
 
@@ -63,7 +71,7 @@ Vimal Babu
 📞 +91 9567250335
 GitHub:    https://github.com/Vimal-Babu
 LinkedIn:  https://www.linkedin.com/in/vimalpython3609
-Portfolio: https://vimal-babu.github.io/portfolio
+Portfolio: https://vimal-babu.github.io/portfolio/
 """
 
 HTML_BODY = """\
